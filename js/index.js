@@ -93,6 +93,20 @@ var geojson = {
             "coordinates": [-47.429817, -21.982236]
         }
 
+    },
+                {
+        "type": "Feature",
+        "properties": {
+            "title": "COVABRA MERCADO",
+            "imageUrl": "https://comotrabalhar.org/wp-content/uploads/2016/08/vagas-covabra.jpg",
+            "type": "city",
+            "iconSize": [100, 100]
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-47.425793, -22.000308]
+        }
+
     }]
 };
 
