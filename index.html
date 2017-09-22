@@ -16,7 +16,30 @@
 </head>
 
 <body>
-  <div id="map">
+  <nav class='menu-ui'>
+  <a href='#' class='active' data-filter='all'>Mostrar tudo</a>
+  <a href='#' data-filter='water'>Repúblicas</a>
+  <a href='#' data-filter='outdoor'>Mercados e padarias</a>
+  <a href='#' data-filter='civil'>Restaurantes</a>
+  <a href='#' data-filter='wildlife'>Comércio</a>
+  <a href='#' data-filter='heritage'>Faculdade</a>
+</nav>
+<div id="map">
+</div>
+<!-- Modal to be populated on click -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 id="marker_title" class=""></h2>
+        <img id="marker_image" class="" src="" />
+        <p id="marker_latlng" class=""></p>
+        <address id="marker_address" class=""></address>
+        <p id="marker_content" class=""></p>
+      </div>
+    </div>
+  </div>
 </div>
   <script src='https://rawgit.com/Popmotion/popmotion/master/dist/popmotion.xl.min.7.8.0.js'></script>
 

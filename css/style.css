@@ -10,16 +10,24 @@
   height: 100vh;
 }
 
+.mapboxgl-marker:hover {
+  z-index: 1000;
+}
+
+.mapboxgl-marker {
+  z-index: 0;
+}
+
 .e-marker {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   cursor: pointer;
 }
 .e-marker__marker {
-  fill: #fff;
+  fill: #f4a742;
 }
 .e-marker__icon {
-  fill: #fff;
+  fill: #000;
 }
 .e-marker__image {
   -webkit-transform: scale(0);
@@ -28,17 +36,80 @@
           transform-origin: 50% 50%;
 }
 .e-marker__circle {
-  display: none;
+  fill: #fff;
+}
+.e-marker .svg-icon {
+  width: 1em;
+  height: 1em;
 }
 .e-marker__text {
   font-size: 12px;
+  background: -webkit-linear-gradient(transparent 30%, #fff 30%);
+  background: linear-gradient(transparent 30%, #fff 30%);
   font-family: brandon-grotesque, sans-serif;
   text-align: center;
   opacity: 0;
-  color: #fff;
-  fill: #fff;
+  color: #000;
+  background: #fff;
+  fill: #000;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   alignment-baseline: middle;
   text-anchor: middle;
+}
+
+.menu-ui {
+  background: #fff;
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  z-index: 1;
+  border-radius: 3px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.menu-ui a {
+  font-size: 13px;
+  color: #404040;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.menu-ui a:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.menu-ui a:last-child {
+  border: none;
+  border-radius: 0 0 3px 3px;
+}
+
+.menu-ui a:hover {
+  background: #f8f8f8;
+  color: #404040;
+  cursor: pointer !important;
+}
+
+.menu-ui a.active,
+.menu-ui a.active:hover {
+  background: #f4a742;
+  color: #FFF;
+}
+
+.info {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+
+.info div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
 }
