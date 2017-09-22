@@ -15,11 +15,11 @@
   cursor: pointer;
   
   &__marker {
-    fill: #fff;
+    fill: #f4a742;
   }
   
   &__icon {
-    fill: #fff;
+    fill: #000;
   }
   
   &__image {
@@ -30,14 +30,19 @@
   &__circle {
     display: none;
   }
-  
+    
+  .svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
   &__text {
     font-size: 12px;
     font-family: brandon-grotesque, sans-serif;
     text-align: center;
     opacity: 0;
-    color: #fff;
-    fill: #fff;
+    color: #000;
+    fill: #000;
     transform-origin: 50% 50%;
     // Center SVG text
     alignment-baseline: middle;
