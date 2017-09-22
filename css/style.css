@@ -28,7 +28,7 @@
           transform-origin: 50% 50%;
 }
 .e-marker__circle {
-  display: none;
+fill: #fff;
 }
 .e-marker__text {
   font-size: 12px;
