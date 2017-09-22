@@ -294,7 +294,7 @@ function initMap(map) {
 }
 
 // 👉🏼 Fetch Map Style data - Vector tilesHosted by OpenMapTiles.com
-fetch('https://s3-us-west-2.amazonaws.com/s.cdpn.io/22914/map_dark-matter.json')
+fetch('https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json')
     .then(response => { 
 	    return response.json();
     })
