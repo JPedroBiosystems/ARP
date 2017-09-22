@@ -9,6 +9,12 @@
   width: 100%;
   height: 100vh;
 }
+.mapboxgl-marker:hover{ 
+  z-index:1000;
+}
+.mapboxgl-marker {
+     z-index: 0;
+}
 
 .e-marker {
   -webkit-transform-origin: bottom center;
