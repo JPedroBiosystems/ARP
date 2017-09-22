@@ -11,41 +11,34 @@
 }
 
 .e-marker {
-  transform-origin: bottom center;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
   cursor: pointer;
-  
-  &__marker {
-    fill: #f4a742;
-  }
-  
-  &__icon {
-    fill: #000;
-  }
-  
-  &__image {
-    transform: scale(0);
-    transform-origin: 50% 50%;
-  }
-  
-  &__circle {
-    display: none;
-  }
-    
-  .svg-icon {
-  width: 1em;
-  height: 1em;
 }
-
-  &__text {
-    font-size: 12px;
-    font-family: brandon-grotesque, sans-serif;
-    text-align: center;
-    opacity: 0;
-    color: #000;
-    fill: #000;
-    transform-origin: 50% 50%;
-    // Center SVG text
-    alignment-baseline: middle;
-    text-anchor: middle;
-  }  
+.e-marker__marker {
+  fill: #f4a742;
+}
+.e-marker__icon {
+  fill: #000;
+}
+.e-marker__image {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+.e-marker__circle {
+  display: none;
+}
+.e-marker__text {
+  font-size: 12px;
+  font-family: brandon-grotesque, sans-serif;
+  text-align: center;
+  opacity: 0;
+  color: #000;
+  fill: #000;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  alignment-baseline: middle;
+  text-anchor: middle;
 }
